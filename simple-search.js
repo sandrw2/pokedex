@@ -1,17 +1,17 @@
 
 require('dotenv').config();
 
-const input = document.getElementsByClassName("search-input");
-const submit = document.getElementById("submit");
-const results = document.getElementsByClassName("results");
+const input = document.querySelector(".search-input");
+const submit = document.querySelector("#submit");
+const results = document.getElementsByClassName(".results");
 
-function displayCards(data){
-    array.forEach(function(card) {
-        const result = document.createElement("div");
-        result.textContent = "pokemon: " + card.name + ", attack:" + card.attacks.name;
-        results.appendChild(result);
-    });
-}
+// function displayCards(data){
+//     array.forEach(function(card) {
+//         const result = document.createElement("div");
+//         result.textContent = "pokemon: " + card.name + ", attack:" + card.attacks.name;
+//         results.appendChild(result);
+//     });
+// }
 
 function clearCards(){
     // Get all child elements of the <html> element
@@ -62,7 +62,7 @@ submit.addEventListener("click", ()=>{
     console.log("0");
     let val = input.value;
 
-    // Call the function to fetch cards
+    //Call the function to fetch cards
     fetchCards(val);
 
 });
