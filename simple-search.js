@@ -1,4 +1,5 @@
 
+require('dotenv').config();
 
 const input = document.getElementsByClassName("search-input");
 const submit = document.getElementById("submit");
@@ -26,7 +27,7 @@ function clearCards(){
 const apiUrl = "https://api.pokemontcg.io/v2/cards";
 
 // Your API key
-const apiKey = "c1d54c8d-eaf0-4895-80c0-8f1ddbefd07f";
+const apiKey = process.env.API_KEY;
 
 // Make a GET request with the API key in the headers
 function fetchCards(val) {
