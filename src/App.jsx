@@ -5,11 +5,18 @@ import CardDisplay from './CardDisplay.jsx';
 function App() {
   const [cardId, setCardId] = useState(''); // Holds the card ID entered by the user
   const [submittedId, setSubmittedId] = useState(null); // Holds the ID to pass to CardDisplay
+  const [cardAddedId, setCardAddedId] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmittedId(cardId); // Set the ID to display when form is submitted
   };
+
+  const handleAddCard = () => {
+    set
+  };
+
+  }
 
   return (
     <div className="App" style={{ fontFamily: 'Arial, sans-serif', padding: '20px' }}>
